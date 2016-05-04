@@ -11,7 +11,7 @@ description = {
 Very simple interface to libavcodec, which allows reading any video and 
 grabbing frames as rgb tensors.
 ]],
-   homepage = "http://www.anselm.org/"
+   homepage = "..."
 }
 dependencies = {
    "lua >= 5.1",
