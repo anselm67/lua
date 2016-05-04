@@ -3,7 +3,7 @@ version = "1.0-1"
 
 
 source = {
-   url = "..."
+   url = "https://github.com/anselm67/lua"
 }
 description = {
    summary = "libavcodec based video decoder.",
