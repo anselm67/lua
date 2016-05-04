@@ -1,0 +1,29 @@
+package = "video"
+version = "1.0-1"
+
+
+source = {
+   url = "..."
+}
+description = {
+   summary = "libavcodec based video decoder.",
+   detailed = [[
+Very simple interface to libavcodec, which allows reading any video and 
+grabbing frames as rgb tensors.
+]],
+   homepage = "http://www.anselm.org/"
+}
+dependencies = {
+   "lua >= 5.1",
+   "torch >= 7.0"
+}
+build = {
+   type = "builtin",
+   modules = {
+      video = "init.lua",
+      libvideo = {
+	 sources = { "video.c" },
+	 libraries = { "TH", "luaT", "avutil", "avformat", "avcodec", "swscale" }
+      }
+   }
+}
